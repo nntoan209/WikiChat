@@ -191,7 +191,7 @@ def multithreaded_download(
 @task
 def download_wikipedia_index(
     c,
-    repo_id: str = "stanford-oval/wikipedia_20240401_10-languages_bge-m3_qdrant_index",
+    repo_id: str = "stanford-oval/wikipedia_20240801_10-languages_bge-m3_qdrant_index",
     workdir: str = DEFAULT_WORKDIR,
     num_threads: int = 8,
 ):
