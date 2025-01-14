@@ -170,7 +170,7 @@ async def compute_accuracy(output_file: str, method: str):
                         # Load query and preprocess if task is multi_choice
                         # Can modify as we want
                         query = data["query"]
-                        if task_name == "multi_choice":
+                        if (task_name == "multi_choice") and ("original" in DATA_FOLDER):
                             query = preprocess_multiple_choice_query(query)
                         
                         # Load the dataset_entry
